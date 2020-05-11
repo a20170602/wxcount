@@ -1,0 +1,50 @@
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a1.png",
+  "dec":"餐饮",
+  "type":"canyin"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a2.png",
+  "dec":"购物",
+  "type":"gouwu"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a3.png",
+  "dec":"出行",
+  "type":"chuxing"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a4.png",
+  "dec":"健康",
+  "type":"jiankang"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a5.png",
+  "dec":"娱乐",
+  "type":"yule"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a6.png",
+  "dec":"住房",
+  "type":"zhufang"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a7.png",
+  "dec":"人情",
+  "type":"renqing"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a8.png",
+  "dec":"交通",
+  "type":"jiaotong"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a9.png",
+  "dec":"学习",
+  "type":"xuexi"
+}
+{
+  "icon_url":"cloud://xiaoxiaoyu-5807l.7869-xiaoxiaoyu-5807l-1301844666/bill_type_icon/a10.png",
+  "dec":"其他",
+  "type":"qita"
+}

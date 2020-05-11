@@ -1,0 +1,95 @@
+<!--miniprogram/pages/add/add.wxml-->
+<view class="add">
+  <view class="top-box">
+    <view class="top">
+        <view class="title">
+            <view class="content">
+              <!-- <view class="item active">支出</view>
+              <view class="item">收入</view> -->
+              <view bindtap="taggleTap" data-index="{{index}}" data-type="{{item.type}}"  class="item {{item.isAct ? 'active':''}}" wx:for="{{tab}}" wx:key="index">{{item.title}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+      <view class="body">
+          <swiper class="wx-swiper" indicator-active-color="{{swiperOptions.indicatorActiveColor}}" indicator-color="{{swiperOptions.indicatorColor}}" indicator-dots="{{swiperOptions.indicatorDots}}">
+            <block>
+              <swiper-item wx:for="{{bill_type}}" wx:key="index">
+                <view class="one-page">
+                  <view  wx:for-index="i" wx:for-item="type" wx:for="{{item}}"  bindtap="taggleBillType" data-index="{{index}}" data-i="{{i}}"   class="page-card {{type.isAct ? 'sel' : ''}}" >
+                    <view class="img">
+                      <image src="{{type.icon_url}}"></image>
+                    </view>
+                    <view class="title">{{type.dec}}</view>
+                  </view>
+       
+                </view>
+              </swiper-item>
+
+        
+            </block>
+          </swiper>
+      </view>
+    </view>
+  </view>
+
+  <view class="middle-box">
+    <view class="bill-sel">
+      账户选择
+    </view>
+    <view class="typeof-bill">
+      <view class="type-item" wx:for="{{bill}}" wx:key="index">
+        <text bindtap="taggleBill" data-index="{{index}}" data-type="{{item.type}}" class="content {{item.isAct ? 'current':''}}">{{item.text}}</text>
+      </view>
+
+ 
+
+    </view>
+  </view>
+
+  <view class="bottom-box">
+    <view class="bill-info">
+        <picker mode="date" value="{{date}}" start="{{start}}" end="{{end}}" bindchange="selDate">
+          <view class="info-t">
+          <view class="picker">
+            日期: 
+          </view>
+          <view class="info-input">
+            <text>{{date}}</text>
+          </view>
+          </view>
+    
+        </picker>
+
+      <view class="info-t">
+        <view class="info-title">
+          金额:
+        </view>
+        <view class="info-input"> 
+          <input bindchange="inputEve"  maxlength="10"  data-type="money"  type="digit" placeholder="请输入金额" value="{{inputInfo.money}}"/>
+        </view>
+      </view>
+      <view class="info-t">
+        <label class="info-t">
+        <view class="info-title">
+          说明:
+        </view>
+        <view class="info-input"> 
+          <input  bindchange="inputEve" maxlength="15" data-type="detail"  type="text" placeholder="请输入说明" value="{{inputInfo.detail}}" confirm-type="done"/>
+        </view>  
+        </label>
+
+      
+      </view>
+    
+    </view>
+  
+  </view>
+
+<view class="button-box">
+  <button  wx:if="{{isAuth}}" bindtap="saveBill"  class="btn" size="default"  hover-class="other-button-hover">保存</button>
+  <button wx:else  class="btn cover" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">保存</button>
+</view>
+
+
+</view>

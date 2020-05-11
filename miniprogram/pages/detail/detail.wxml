@@ -1,0 +1,30 @@
+
+
+<view  class="bot-box" wx:for="{{showData}}"  wx:for-item="i" wx:for-index="idx">
+    <view class="bill-card" >
+      <view class="card-top">
+        <view class="date">
+          {{i.date}}
+        </view>
+        <view class="msg">
+        <text class="input">{{i.cost}} {{i.total}}</text>
+        </view>
+      </view>
+      <view class="card-body">
+        <view class="card-item" wx:for="{{i.res}}" wx:for-item="j" wx:for-index="jdx" >
+          <view class="img">
+            <image src="{{j.icon_url}}"></image>
+          </view>
+          <view class="content">
+            <view>{{j.detail}}</view>
+          </view>
+           <view class="price {{j.costType == 'zhichu' ? '' : 'good'}}">{{j.costType == "zhichu" ? '-' : '+'}}{{j.money}}</view>
+        </view>
+ 
+
+      </view>
+    
+    </view>
+  
+  
+</view>

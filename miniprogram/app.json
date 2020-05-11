@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/showBill/showBill",
+    "pages/chart/chart",
+    "pages/add/add",
+    "pages/bill/bill",
+    "pages/detail/detail"
+
+  ],
+  "tabBar": {
+    "color": "#D8D8D8",
+    "selectedColor": "#2793FF",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/icon_home.png",
+        "selectedIconPath": "./images/icon_home_AC.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "记账",
+        "iconPath": "./images/icon_add.png",
+        "selectedIconPath": "./images/icon_add_AC.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "统计",
+        "iconPath": "./images/icon_chart.png",
+        "selectedIconPath": "./images/icon_chart_AC.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./images/icon_mine.png",
+        "selectedIconPath": "./images/icon_mine_AC.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2793FF",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

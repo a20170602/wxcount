@@ -1,0 +1,181 @@
+/* miniprogram/pages/add/add.wxss */
+.add{
+  /* height: 100%; */
+  background-color: #f5f5f5;
+}
+.top-box .top{
+  padding-top: 50rpx;
+  height: 80rpx;
+  background-image: linear-gradient(45deg,#55ACFF , #1589FE);
+}
+
+.top .title{
+  margin: auto;
+  padding-top: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx 20rpx 0 0;
+  width: 700rpx;
+  height: 70rpx;
+}
+
+.title .content{
+  text-align: center;
+  margin:  auto ;
+  display: flex;
+  width: 300rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  border: 1rpx solid #55ACFF;
+  border-radius: 50rpx;
+  overflow: hidden;
+}
+.content .item{
+  width: 150rpx;
+}
+
+.active{
+  background-color: #55ACFF;
+  color: #fff;
+}
+
+.bottom .body{
+  width: 700rpx;
+  height: 350rpx;
+  margin: auto;
+  background-color: #fff;
+}
+
+.wx-swiper{
+  height: 350rpx;
+}
+.one-page{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 30rpx 50rpx;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.page-card{
+  flex-shrink: 0;
+  width: 25%;
+  height: 50%;
+}
+.page-card .img{
+  
+  width: 40px;
+  height: 40px;
+  margin: 10rpx auto;
+}
+
+.page-card .img image{
+  width: 40px;
+  height: 40px;
+}
+
+.page-card .title{
+  height: 41rpx;
+  line-height: 41rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.middle-box{
+  margin: 25rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.bill-sel{
+  padding: 0 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-weight: 600;
+  border-bottom: 2rpx solid #d8d8d8;
+}
+
+.typeof-bill{
+  display: flex;
+
+}
+
+.type-item{
+  width: 20%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #d8d8d8;
+}
+
+.type-item .content{
+  padding: 5rpx 10rpx;
+  border: 2rpx solid #d8d8d8;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+}
+
+.current{
+  color: #fff;
+  border: 2rpx solid #55ACFF !important;
+  background-color: #55ACFF;
+}
+
+.bottom-box{
+  margin: 25rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.info-title{
+  white-space: nowrap;
+}
+
+.bill-info{
+  padding: 10rpx;
+}
+
+.info-t{
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+}
+
+.info-input{
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+}
+
+.sel{
+  background-color: #55ACFF;
+  border-radius: 20rpx;
+}
+
+.sel .title{
+  color: #fff;
+}
+
+.btn{
+  margin: 20rpx auto;
+  color: #fff;
+  background-color: #55ACFF;
+}
+
+.other-button-hover {
+  background-color: rgb(73, 150, 223);
+}
+
+.button-box{
+  position: relative;
+
+}
+
+.cover{
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  position: absolute;
+  z-index: 5;
+}

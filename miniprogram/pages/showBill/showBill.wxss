@@ -1,0 +1,78 @@
+.bot-box{
+  padding: 0 40rpx;
+}
+.bill-card{
+  margin: 20rpx 0;
+}
+
+.card-top{
+  display: flex;
+  justify-content: space-between;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-bottom: 2rpx solid #d8d8d8;
+}
+.card-top .date{
+  font-size: 25rpx;
+  font-weight: 400;
+  color: #5C6165;
+}
+
+.card-top .msg{
+  font-size: 25rpx;
+  font-weight: 400;
+  color: #5C6165;
+}
+.msg .input{
+  margin-left: 20rpx;
+}
+.card-item{
+  margin: 10rpx 0;
+  display: flex;
+  height: 90rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #d8d8d8;
+  font-size: 30rpx;
+  font-weight: 600;
+  background-color: #fff;
+}
+.card-item .img{
+  width: 150rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item .img image{
+  flex-shrink: 0;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.card-item .content{
+  height: 80rpx;
+  font-size: 28rpx;
+}
+.card-item .content view{
+  flex-shrink: 0;
+  display: block;
+  border-radius: 30rpx;
+  width: 360rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 20rpx;
+}
+
+.card-item .r-img{
+  text-align: center;
+  width: 160rpx;
+}
+
+.card-item .r-img image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.good{
+  color: #1589FE;
+}

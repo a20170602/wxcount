@@ -1,0 +1,91 @@
+
+
+
+
+<view class="chart">
+  <view class="skicky">
+       <view class="top">
+      <view class="top-box">
+          <view class="btn" bindtap="changeType"> 
+            <view class="line"></view>
+              按{{type == "0" ? "年" : type == "1" ? "月" : "日"}}
+            <image  class="btn-icon" src="../../images/switch.png"></image>
+            
+          </view>
+          <view class="main">
+          <view hidden="{{ !(type == '1')}}">
+            <text data-type="1" data-value="{{item}}"   bindtap="changeDate" class="item {{selDate.month == item ? 'active' : '' }}" wx:for="{{dateList.month}}" wx:key="index">{{item}}月</text>    
+          </view>
+          <view  hidden="{{ !(type == '0') }}">
+            <text data-type="0" data-value="{{item}}" bindtap="changeDate"  class="item {{selDate.year == item ? 'active' : '' }}" wx:for="{{dateList.year}}" wx:key="index">{{item}}</text>
+          </view>
+          <view   hidden="{{ !(type == '2') }}">
+            <text  data-type="2"  data-value="{{item}}"  bindtap="changeDate" class="item {{selDate.day == item ? 'active' : '' }}" wx:for="{{dateList.day}}" wx:key="index">{{item}}</text>    
+          </view>
+
+          </view>
+          <view class="choose">
+            <view class="line"></view>
+            筛选
+            <image class="btn-icon" src="../../images/choose.png" ></image>
+          </view>
+      
+      </view>
+
+    </view>
+    <view class="control">
+      <view class="control-inner">
+        <view class="control-total">
+          <view style="left:{{costType == 'zhichu' ?'120rpx':'425rpx'}}" class="bot-line"></view>
+          <view data-type="zhichu" bindtap="changeCostType" class="title">
+                <view style="{{costType == 'zhichu' ?  '':'height:100rpx;line-height:100rpx'}}" class="t">总支出</view>
+                <view class="b">{{totalZhi}}</view>
+          </view>
+          <view class="mid"></view>
+          <view data-type="shouru" bindtap="changeCostType" class="title">
+                <view style="{{costType == 'shouru' ?  '':'height:100rpx;line-height:100rpx'}}" class="t">总收入</view>
+                <view class="b">{{totalShou}}</view>
+          </view>
+        </view>
+        <view class="canvas-box">
+            <view class="container">
+              <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}" force-use-old-canvas="true"></ec-canvas>
+            </view>
+        </view>
+          <!-- <view>
+            <canvas  canvas-id="pieCanvas" class="canvas" ></canvas>
+          </view> -->
+      </view>
+    </view>
+  
+  
+  </view>
+ 
+
+
+
+  <view class="show-list">
+    <!-- 展示条例界面 -->
+    <view bindtap="toDetail" data-str="{{item.ids}}" class="show-item" wx:for="{{listData}}" wx:key="index">
+      <view class="img">
+        <image src="{{item.icon_url}}"></image>
+      </view>
+      <view class="content">
+        <view class="content-t">
+          <view>{{item.dec}}</view>
+          <view>￥{{item.total}}</view>
+        </view>
+        <view class="content-b">
+          <view class="b-pro">
+            <progress percent="{{item.percent}}" borderRadius="10rpx" activeColor="{{item.activeColor}}" duration="1" active="true"></progress>
+          </view>
+          <view class="b-num">
+              {{item.count}}笔
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  
+</view>

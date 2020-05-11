@@ -1,0 +1,23 @@
+<view class="mine">
+  <view class="top">
+    <view class="auctor">
+       <button wx:if="{{!isAuth}}"  class="btn" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取头像</button>
+       <image wx:else class="auctor" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="username">{{userInfo.nickName}}</view>
+  </view>
+  <view class="list" bindtap="toMyBill">
+    <view class="left">我的账单</view>
+    <view class="arrow">
+      <image src="../../images/arrow.png"></image>
+    </view>
+  </view>
+  <view class="list">
+    <view class="left">设置</view>
+    <view class="arrow">
+       <image src="../../images/arrow.png"></image>
+    </view>
+  </view>
+ 
+</view>
+
